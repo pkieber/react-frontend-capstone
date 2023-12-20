@@ -1,9 +1,15 @@
 import React from 'react';
 import './footer.css';
+import LogoFooter from '../../assets/logo-footer.png';
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer>
+      <img src={LogoFooter} alt="" className='logo-footer'/>
+      <div>
+          <p>© Copyright Little Lemon</p>
+      </div>
+    </footer>
   )
 }
 
