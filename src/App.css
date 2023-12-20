@@ -105,4 +105,21 @@ article ul {
     section {
         flex-direction: column;
     }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h1, h2, h3 {
+        letter-spacing: 1.5px;
+    }
+
+    .cta {
+        font-size: 1.4rem;
+        width: 180px;
+    }
 }

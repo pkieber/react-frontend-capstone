@@ -2,6 +2,12 @@
     width: 75px;
 }
 
+@media (max-width: 800px) {
+    .logo-footer {
+        width: 50px;
+    }
+}
+
 footer {
     display: flex;
     margin-top: 24px;

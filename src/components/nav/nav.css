@@ -32,3 +32,9 @@ nav ul a:hover {
     text-decoration-thickness: 0.1rem;
     color: #edefee9e;
 }
+
+@media (max-width: 800px) {
+    nav ul {
+        font-size: 1.2rem;
+    }
+}
