@@ -1,50 +1,72 @@
 import React from 'react';
 import './main.css';
-import Dish from '../../assets/dish.jpg';
-import Table from '../../assets/table.jpg';
-import Cook from '../../assets/cook.jpg';
+import GreekSalad from '../../assets/img/greek_salad.jpg'
+import Bruschetta from '../../assets/img/bruschetta.jpg'
+import LemonDessert from '../../assets/img/lemon_dessert.jpg'
+import Food from '../../assets/img/restauranfood.jpg';
+
 
 const Main = () => {
   return (
     <main>
-      <section>
+      <section className='full-bleed'>
         <article className='hero'>
-        <h1 className="title">SPECIAL OFFER</h1>
-            <p className="subtitle">
-                20% Off this Weekend
-            </p>
-          <button className="cta">Book now</button>
+            <div>
+                <h1 className="title">Little Lemon</h1>
+                <p className="subtitle">
+                    Chicago
+                </p>
+                <p>
+                    We are a family owned Mediterranean restaurant, focused on traditional recipes with a modern twist.
+                </p>
+                <button className="cta">Reserve a Table</button>
+            </div>
+            <img className="b-top" src={Food} alt="food"/>
         </article>
       </section>
-
+        <div className='section-title'>
+            <h2>This week specials</h2>
+            <button className='cta'>Online Menu</button>
+        </div>
       <section>
-            <article>
-                <h2>Our New Menu</h2>
-                <img src={Dish} alt="dish"/>
-                <p>
-                    Our menu consists of 12-15 seasonal items based on Italian, Greek, and Turkish culture.
-                </p>
-                <a href="#">See our new menu</a>
+            <article className="b-top">
+                <img className="b-top" src={GreekSalad} alt="dish"/>
+                <div className='title'>
+                    <h3>Greek salad</h3>
+                    <div>$ 12.99</div>
+                </div>
+                <div>
+                    <p>
+                        The famous greek salad of crispy lettuce, pepper, olives and our Chicago style feta chees, garnished with crunchy garlic and resemary croutons.
+                    </p>
+                    <a href="#">Order a delivery</a>
+                </div>
             </article>
-            <article>
-                <h2>Book a Table</h2>
-                <img src={Table} alt="table"/>
-                <p>
-                    Our menu consists of 12-15 seasonal items based on Italian, Greek, and Turkish culture.
-                </p>
-                <a href="#">Book your table now</a>
+            <article className="b-top">
+                <img className="b-top" src={Bruschetta} alt="dish"/>
+                <div className='title'>
+                    <h3>Bruschetta</h3>
+                    <div>$ 5.99</div>
+                </div>
+                <div>
+                    <p>
+                        Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.
+                    </p>
+                    <a href="#">Order a delivery</a>
+                </div>
             </article>
-            <article>
-                <h2>Opening Hours</h2>
-                <img src={Cook} alt="cook"/>
-                <p>
-                    The Little Lemon Restaurant is open 7 days a week, except for public holidays.
-                </p>
-                <ul>
-                    <li>Mon - Fri: 2pm - 10pm</li>
-                    <li>Sat: 2pm - 11pm</li>
-                    <li>Sun: 2pm - 9pm</li>
-                </ul>
+            <article className="b-top">
+                <img className="b-top" src={LemonDessert} alt="dish"/>
+                <div className='title'>
+                    <h3>Lemon Dessert</h3>
+                    <div>$ 5.00</div>
+                </div>
+                <div>
+                    <p>
+                        This comes straight from grandma0s recipe book. Every last ingredient has been sourced and is as authentic as can be imagined.
+                    </p>
+                    <a href="#">Order a delivery</a>
+                </div>
             </article>
         </section>
     </main>
