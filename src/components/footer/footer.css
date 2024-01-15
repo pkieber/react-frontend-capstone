@@ -12,7 +12,6 @@ footer {
     display: flex;
     margin-top: 24px;
     padding: 1.4rem 2rem;
-    display: flex;
     gap: 2rem 1rem;
     /*border-radius: 20px;*/
     background-color: var(--primary-green);
@@ -40,4 +39,15 @@ footer h4 {
     margin: 0;
     margin-bottom: 0.4rem;
     font-size: 0.9rem;
+}
+
+.nav-links {
+    display: flex;
+}
+
+@media (max-width: 800px) {
+    .nav-links {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+    }
 }

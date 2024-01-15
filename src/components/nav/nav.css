@@ -1,9 +1,8 @@
 nav {
     /*background-color: #495E57;*/
     color: var(--highlight-dark);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-bottom: 0px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     border-radius: 16px;
     display: flex;
     align-items: center!important;
@@ -16,7 +15,7 @@ nav ul {
     padding-inline-start: 0rem;
     margin-bottom: 0px;
     margin-top: 0px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 nav li {
@@ -36,7 +35,7 @@ nav ul a:active {
 
 nav ul a:hover {
     text-decoration-thickness: 0.1rem;
-    color: #edefee9e;
+    color: #3a3b3b9e;
 }
 
 @media (max-width: 800px) {

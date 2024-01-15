@@ -8,6 +8,7 @@ const Footer = () => {
       <div>
         <img src={LogoFooter} alt="" className='logo-footer'/>
       </div>
+      <div className='nav-links'>
       <div>
         <h4>Navigation</h4>
         <p><a href="/home">Home</a></p>
@@ -28,6 +29,7 @@ const Footer = () => {
         <p><a href="#">Instagram</a></p>
         <p><a href="#">Facebook</a></p>
         <p><a href="#">Tiktok</a></p>
+      </div>
       </div>
     </footer>
   )

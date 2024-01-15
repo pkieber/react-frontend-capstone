@@ -1,3 +1,7 @@
+.container {
+    margin-top: 3rem;
+}
+
 .grid-container {
     display: grid;
 }
@@ -17,6 +21,7 @@ h2 {
     border-radius: 12px;
     height: fit-content;
     padding: 1rem;
+    height: 150px;
 }
 
 .testimonial > h4, div {
