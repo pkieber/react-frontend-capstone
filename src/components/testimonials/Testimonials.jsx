@@ -27,7 +27,6 @@ const Testimonials = () => {
             <div>Name</div>
             <div>Review Text</div>
           </article>
-
         </div>
       </section>
     </div>

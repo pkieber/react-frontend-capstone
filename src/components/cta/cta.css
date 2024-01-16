@@ -9,8 +9,9 @@
 }
 
 .hero-container {
-    display: grid;
-    grid-template-columns: 55% 35%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     gap: 10%;
 }
 
@@ -38,7 +39,7 @@ h1 {
 /* MEDIA QUERIES (MEDIUM DEVICES) */
 @media screen and (max-width: 1024px) {
     .hero-container {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         gap: 2rem;
     }
 

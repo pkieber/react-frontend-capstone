@@ -83,12 +83,13 @@ h2 {
     }
 
     .specials-content p {
-        margin: 1.5rem 0;
+        margin: 1rem 0;
     }
 }
 
 .specials-text {
     padding: 1rem !important;
+    padding-bottom: 1.5rem!important;
     height: 200px;
     display: flex;
     justify-content: space-between;

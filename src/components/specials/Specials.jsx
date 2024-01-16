@@ -3,6 +3,7 @@ import './specials.css';
 import GreekSalad from '../../assets/img/greek_salad.jpg';
 import Bruschetta from '../../assets/img/bruschetta.jpg';
 import LemonDessert from '../../assets/img/lemon_dessert.jpg';
+import { Link } from 'react-router-dom';
 
 const Specials = () => {
   return (
@@ -28,7 +29,7 @@ const Specials = () => {
                             The famous greek salad of crispy lettuce, pepper, olives and our Chicago style feta chees, garnished with crunchy garlic and resemary croutons.
                         </p>
                     </div>
-                    <a className="" href="#">Order a delivery</a>
+                    <Link to="/order">Order a delivery</Link>
                 </div>
             </article>
       </div>
@@ -46,7 +47,7 @@ const Specials = () => {
                             Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.
                         </p>
                     </div>
-                    <a href="#">Order a delivery</a>
+                    <Link to="/order">Order a delivery</Link>
                 </div>
             </article>
       </div>
@@ -64,7 +65,7 @@ const Specials = () => {
                             This comes straight from grandma0s recipe book. Every last ingredient has been sourced and is as authentic as can be imagined.
                         </p>
                     </div>
-                    <a href="#">Order a delivery</a>
+                    <Link to="/order">Order a delivery</Link>
                 </div>
             </article>
       </div>

@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Menu from './pages/Menu';
@@ -15,7 +15,6 @@ function App() {
   return (
     <>
       <Nav />
-      <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
           <Route path="/home" element={<Home />} />
@@ -26,7 +25,6 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
-      </BrowserRouter>
       <Footer />
     </>
   );

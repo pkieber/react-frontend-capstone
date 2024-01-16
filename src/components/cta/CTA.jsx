@@ -21,7 +21,7 @@ const CTA = () => {
 
         <div className="hero-content">
           <div className="img-container">
-            <img src={Food} alt='Hero Image' />
+            <img src={Food} alt='Hero' />
           </div>
         </div>
 
