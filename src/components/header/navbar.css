@@ -52,7 +52,7 @@ nav ul li a:not(.active):hover {
 nav .menu {
     display: none;
     position: absolute;
-    top: 1.4rem;
+    top: 1.6rem;
     right: 0rem;
     flex-direction: column;
     justify-content: space-between;

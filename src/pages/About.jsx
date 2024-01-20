@@ -8,8 +8,8 @@ const About = () => {
         <section className='container-height'>
           <article>
             <h1>About Us</h1>
-            <div class="row">
-              <div class="column">
+            <div className="row">
+              <div className="column">
                 <p>
                   Based in Chicago, Illinois, Little Lemon is a family owned
                   Mediterranean restaurant, focused on traditional recipes served with a
@@ -42,10 +42,10 @@ const About = () => {
                   cuisines from the mediterranean region.
                 </p>
               </div>
-              <div class="column">
-                <figure class="figure">
+              <div className="column">
+                <figure className="figure">
                   <img className="owner-pic" src={Owner} alt="Mario and Adrian"/>
-                  <span class="figure-caption">
+                  <span className="figure-caption">
                     Little Lemon owners Mario and Adrian.
                   </span>
                 </figure>

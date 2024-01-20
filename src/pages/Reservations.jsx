@@ -26,7 +26,6 @@ const Reservations = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Continue with the form submission
     console.log("Form submitted:", { date, time, guests, occasion });
   };
 
@@ -44,7 +43,7 @@ const Reservations = () => {
                   id="res-date"
                   value={date}
                   onChange={(e) => setDate(e.target.value)}
-                  min={currentDate} // Set the minimum date
+                  min={currentDate}
                   required
                 />
 
