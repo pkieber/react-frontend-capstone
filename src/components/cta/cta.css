@@ -58,3 +58,11 @@ h1 {
         margin: 1.5rem 0;
     }
 }
+
+button > a {
+    color: var(--highlight-dark) !important;
+}
+
+button > a:hover {
+    color: var(--highlight-light) !important;
+}

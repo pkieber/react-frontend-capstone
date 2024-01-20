@@ -1,6 +1,7 @@
 import React from 'react';
 import './cta.css';
 import Food from '../../assets/img/restauranfood.jpg';
+import { Link } from 'react-router-dom';
 
 const CTA = () => {
   return (
@@ -16,7 +17,9 @@ const CTA = () => {
               asperiores nobis earum dolorem molestias soluta veniam repudiandae sed? 
               Aliquid, illo. Perferendis provident perspiciatis eos vel incidunt natus!
             </p>
-            <button className='cta'>Reserve a Table</button>
+            <button className='cta'>
+              <Link to='/reservations'>Reserve a Table</Link>
+            </button>
         </div>
 
         <div className="hero-content">

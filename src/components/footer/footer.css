@@ -47,7 +47,7 @@ footer h4 {
 
 @media (max-width: 800px) {
     .nav-links {
-        flex-direction: column-reverse;
+        flex-direction: column;
         gap: 1.5rem;
     }
 }

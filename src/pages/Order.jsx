@@ -1,9 +1,14 @@
 import React from 'react'
+import './style.css';
 
 const Order = () => {
   return (
     <>
-        <h2>Order</h2>
+        <section className='container-height'>
+          <article>
+            <h1>Order</h1>
+          </article>
+        </section>
     </>
   )
 }
