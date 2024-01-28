@@ -1,37 +1,22 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './testimonials.css';
-import Avatar from '../../assets/img/avatar.png';
-
-
-const testimonialData = [
-  {
-    image: Avatar,
-    rating: 'Rating1', 
-    name: 'Name1', 
-    review: 'Review Text1' 
-  },
-  {
-    image: Avatar,
-    rating: 'Rating2', 
-    name: 'Name2', 
-    review: 'Review Text2' 
-  },
-  {
-    image: Avatar,
-    rating: 'Rating3', 
-    name: 'Name3', 
-    review: 'Review Text3' 
-  },
-  {
-    image: Avatar,
-    rating: 'Rating4', 
-    name: 'Name4', 
-    review: 'Review Text4' 
-  },
-];
-
 
 const Testimonials = () => {
+  const [testimonialData, setTestimonialData] = useState([]);
+
+  useEffect(() => {
+    fetch('/data/testimonialsData.json')
+      .then((response) => response.json())
+      .then((data) => setTestimonialData(data))
+      .catch((error) => console.error('Error fetching testimonials data:', error));
+  }, []);
+
+
+  const renderStarRating = (rating) => {
+    return '★'.repeat(rating.length);
+  };
+
+
   return (
     <div className='container'>
       <h2>Testimonials</h2>
@@ -41,8 +26,8 @@ const Testimonials = () => {
             <article key={index} className="testimonial">
               <img className='avatar' src={testimonial.image} alt={`Testimonial: ${testimonial.name}`} />
               <div>
-                <h4>{testimonial.rating}</h4>
                 <div>{testimonial.name}</div>
+                <div>{renderStarRating(testimonial.rating)}</div>
                 <div>{testimonial.review}</div>
               </div>
             </article>

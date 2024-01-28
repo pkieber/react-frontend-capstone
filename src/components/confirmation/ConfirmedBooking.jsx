@@ -15,7 +15,6 @@ const ConfirmedBooking = (props) => {
             <p className='booking-details-title'>Here are your booking details:</p>
             <p><b>Booking Name: </b> {details.name}</p>
             <p><b>Email: </b> {details.email}</p>
-            <p><b>Phone: </b> {details.phone}</p>
             <p><b>Date: </b> {details.date}</p>
             <p><b>Time: </b> {details.time}</p>
             <p><b>Number of Guests: </b> {details.guests}</p>

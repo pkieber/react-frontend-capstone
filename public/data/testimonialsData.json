@@ -1,0 +1,26 @@
+[
+    {
+        "image": "data/img/avatar1.png",
+        "rating": "*****",
+        "name": "Jessica",
+        "review": "The Lemon Cake is the best!"
+    },
+    {
+        "image": "data/img/avatar2.png",
+        "rating": "****",
+        "name": "Steve",
+        "review": "I will come back again!"
+    },
+    {
+        "image": "data/img/avatar3.png",
+        "rating": "***",
+        "name": "Anon123",
+        "review": "Highly recommend the Greek salad!"
+    },
+    {
+        "image": "data/img/avatar4.png",
+        "rating": "*****",
+        "name": "Pat",
+        "review": "Top notch service!"
+    }
+]

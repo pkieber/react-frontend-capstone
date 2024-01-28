@@ -1,38 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './specials.css';
 import { Link } from 'react-router-dom';
-import GreekSaladImage from '../../assets/img/greek_salad.jpg';
-import BruschettaImage from '../../assets/img/bruschetta.jpg';
-import LemonDessertImage from '../../assets/img/lemon_dessert.jpg';
-
-const specialsData = [
-    {
-      image: GreekSaladImage,
-      title: 'Greek Salad',
-      price: '$ 12.99',
-      description: 'The famous Greek salad of crispy lettuce, pepper, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.',
-    },
-    {
-      image: BruschettaImage,
-      title: 'Bruschetta',
-      price: '$ 5.99',
-      description: 'Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.',
-    },
-    {
-      image: LemonDessertImage,
-      title: 'Lemon Dessert',
-      price: '$ 5.00',
-      description: 'This comes straight from grandma\'s recipe book. Every last ingredient has been sourced and is as authentic as can be imagined.',
-    },
-  ];
-
 
 const Specials = () => {
+  const [specialsData, setSpecialsData] = useState([]);
+
+  useEffect(() => {
+    // Fetch the specials-data from JSON file
+    fetch('/data/specialsData.json')
+      .then((response) => response.json())
+      .then((data) => setSpecialsData(data))
+      .catch((error) => console.error('Error fetching specials data:', error));
+  }, []);
+
   return (
     <>
       <div className='section-title'>
         <h2>This week specials</h2>
-        <button className='cta'>Online Menu</button>
+        <button className='cta'>
+            <Link to='/menu'>Online Menu</Link>
+        </button>
       </div>
 
       <section id="specials">
@@ -57,7 +44,7 @@ const Specials = () => {
         </div>
       </section>
     </>
-  )
+  );
 }
 
 export default Specials;
