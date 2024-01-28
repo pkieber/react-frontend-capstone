@@ -6,7 +6,6 @@ const Specials = () => {
   const [specialsData, setSpecialsData] = useState([]);
 
   useEffect(() => {
-    // Fetch the specials-data from JSON file
     fetch('/data/specialsData.json')
       .then((response) => response.json())
       .then((data) => setSpecialsData(data))

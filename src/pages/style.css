@@ -70,3 +70,7 @@ input, select {
 .container-height {
     min-height: 590px;
 }
+
+.m-top {
+    margin-top: 1.5rem;
+}

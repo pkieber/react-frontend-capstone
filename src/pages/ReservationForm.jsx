@@ -60,7 +60,7 @@ const ReservationForm = ({ onSubmit }) => {
 
   return (
     <form style={{ display: 'grid', maxWidth: '200px', gap: '20px' }} onSubmit={handleSubmit}>
-      <label htmlFor="res-name" className="input-label mt-0">Name</label>
+      <label htmlFor="res-name" className="input-label mt-0">Your Name</label>
       <input 
         type="text" 
         id="res-name" 
@@ -69,7 +69,7 @@ const ReservationForm = ({ onSubmit }) => {
         placeholder="Booking name" 
         required 
       />
-      <label htmlFor="res-email" className="input-label">Email</label>
+      <label htmlFor="res-email" className="input-label">Your Email</label>
       <input 
         type="email" 
         value={email}
@@ -121,7 +121,7 @@ const ReservationForm = ({ onSubmit }) => {
         <option value="Birthday">Birthday</option>
         <option value="Anniversary">Anniversary</option>
       </select>
-      <button className="cta" type="submit" value="Make Your reservation" disabled={!isFormValid}>
+      <button className="cta m-top" type="submit" value="Make Your reservation" disabled={!isFormValid}>
         Make your reservation
       </button>
     </form>
