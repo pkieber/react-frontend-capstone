@@ -18,7 +18,7 @@ const CTA = () => {
               Aliquid, illo. Perferendis provident perspiciatis eos vel incidunt natus!
             </p>
             <button className='cta'>
-              <Link to='/reservations'>Reserve a Table</Link>
+              <Link to='/reservations' aria-label='On Click'>Reserve a Table</Link>
             </button>
         </div>
 

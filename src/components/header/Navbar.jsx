@@ -16,10 +16,10 @@ const Navbar = () => {
       <Link to="/home" className='logo'>
         <img src={Logo} alt="logo" className='logo' />
       </Link>
-      <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
-        <span></span>
-        <span></span>
-        <span></span>
+      <div className={`menu ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
+        <span className={menuOpen ? 'cross' : ''}></span>
+        <span className={menuOpen ? 'cross' : ''}></span>
+        <span className={menuOpen ? 'cross' : ''}></span>
       </div>
       <ul className={menuOpen ? "open" : ""}>
         <li>

@@ -41,7 +41,7 @@ const Reservations = () => {
       </section>
       {/* Modal for confirmation */}
       {showModal && (
-        <ConfirmedBooking details={bookingDetails} onClose={closeModal} />
+        <ConfirmedBooking details={bookingDetails} onClose={closeModal} aria-label="On Click"/>
       )}
     </>
   );

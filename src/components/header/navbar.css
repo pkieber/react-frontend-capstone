@@ -91,6 +91,8 @@ nav .menu span {
 
     nav ul.open {
         display: flex;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     nav ul li {
@@ -102,4 +104,36 @@ nav .menu span {
         margin: 0.2rem 0.5rem;
         color: var(--highlight-light)!important;
     }
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 1.6rem;
+    right: 0rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 1.6rem;
+    cursor: pointer;
+}
+
+.menu span {
+    height: 0.2rem;
+    width: 100%;
+    background-color: var(--highlight-dark);
+    border-radius: 0.2rem;
+    transition: 0.3s;
+}
+
+.menu.open span:nth-child(1) {
+    transform: rotate(-45deg) translate(-4px, 7px);
+}
+
+.menu.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu.open span:nth-child(3) {
+    transform: rotate(45deg) translate(-4px, -8px);
 }

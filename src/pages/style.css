@@ -15,7 +15,6 @@
     }
 }
 
-
 .column {
     flex-basis: 50%;
     margin-bottom: 2rem;
@@ -73,4 +72,10 @@ input, select {
 
 .m-top {
     margin-top: 1.5rem;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
 }
